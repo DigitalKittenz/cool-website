@@ -1,0 +1,677 @@
+*{
+    margin:0;
+    padding:0;
+} 
+
+.skinnypix{
+    display: none;
+}
+img{
+    width: 100%;
+}
+
+.emoji {
+
+    font-size: 2.2rem;
+left: 9%;
+position: absolute;
+  }
+  
+.mobile-p{
+    display: none;
+}
+
+body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    position: relative;
+}
+h1#header-title{
+    font-size:1.6em;
+}
+li{
+    margin-left: 5%;
+}
+
+#chatlogs, .translatables{
+    margin-left:2%;
+    margin-right:2%;
+}
+
+main{
+    margin-top:7%;
+    text-align: left;
+   
+    align-self: start;
+    margin-left: 10%;
+}
+summary{
+    color:#000;
+    margin-bottom: 4px;
+    font-weight: bolder;
+}
+header{
+    background-color:black;
+    color:white;
+    width:145%;
+    padding: 1.5em;
+    justify-content: center;
+    display: flex;
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+header > span{
+    position: absolute;
+    left:5%;
+    content: "⚫";
+    font-size: 1px;
+    border: 1px solid black;
+    padding: 0.35%;
+    height:5px;
+    background-color:black;
+    top:0;
+    z-index: -100000;
+   
+}
+
+h1, h2, h3, h4, h6 {
+    font-family: 'Fira Code', monospace;
+  }
+.emojiHider p, .emojiHider{
+    font-size:1px;
+    color:#d5d5d500;
+    outline: none;
+     -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+}  
+
+a{
+    transition: color 0.3s ease;
+}
+
+
+article h3{
+    text-align: right;
+    font-size:1.4em;
+    color:#904887;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+article h2{
+    font-size:1.5em;
+    color:white;
+    text-align: center;
+}
+article p{
+    color: #bababa;
+}
+aside{
+    background-image: linear-gradient(120deg, #904887 10.79%, #841376 87.08%);
+    /*! flex:3.4; */
+    color:#fff;
+    padding: 105px 2% 2%;
+    /*! padding-left: 5%; */
+    font-size: 12px;
+    width: 31em;
+    left: 0;
+    z-index: 9;
+    display: none;
+}
+
+article{
+    /*! width: fit-content; */
+    background-color: #00000014;
+    /*! color: #00ff00; */
+    /*! flex:4; */
+    padding: 127px 8% 8%;
+}
+article p{
+    line-height: 163%;
+    display: flex;
+    flex-direction: column;
+}
+.secret{
+    font-size: 1px;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    /*! float: right; */
+    color: #3c3c3c;
+}
+.secret p, h3{
+    color:black;
+}
+.important-article{
+    padding: 1px;
+    color: #3c3c3c;
+    top: 18.2%;
+}
+.important-article p, h3{
+    color:#3c3c3c;
+    /*! background-color:#3c3c3c; */
+    border:none;
+}
+aside ol li{
+    padding: 2%;
+}
+aside li{
+    margin-left:5%;
+}
+
+.center-epic{
+    text-align: center;
+    font-size:1.5em;
+    position: relative;
+    /*! margin-left: 5%; */
+    left: 0.7%;
+    /*! display: none; */
+}
+footer{
+    background-color:black;
+    padding-top:2%;
+    padding-bottom:1%;
+    color:white;
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+    padding-right: 5%;
+    margin-top: 14%;
+    bottom: -20vh;
+    position: absolute;
+}
+footer p{
+    font-size:73%;
+    position:absolute;
+    right:4.6%;
+    margin-top:0.8%;
+}
+.italicz{
+    font-style: italic;
+    color: #fff;
+}
+.intro h3:first-child{
+    margin-bottom: 5%;
+}
+
+
+.intro p{
+    line-height:120%;
+    padding-bottom:5%;
+}
+.intro p:last-child{
+
+    margin-bottom: 8%;
+    text-align:right;
+    border-bottom:2px solid black;
+}
+.tiny-hidden{
+    color:black;
+    font-size:1px;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+}
+.again {
+  position: relative;
+  top: -1.4em;
+  left: -1.5em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;   /* right bottom */
+  font-size: 0.5em;
+}
+header > div{
+    padding-left:10%;
+}
+header > nav{
+    
+    /*! width:12vw; */
+    display:flex;
+    justify-content: flex-start;
+    align-self: center;
+    position: relative;
+    left: 3%;
+}
+  
+header a{
+    text-decoration: none;
+    color:white;
+    padding-left: 49%;
+    padding-right: 5%;
+}
+
+a{
+    color:#ff00e1;
+    text-decoration:none;
+}
+header a:hover{
+    color:#ff00e1;
+}
+
+
+.misaligned{
+    /*! position: absolute; */
+    /*! left: 73%; */
+    font-style: italic;
+}
+/*tests*/
+#hidden-content {
+    display: none;
+    flex: 4;
+}
+
+aside {
+    position: fixed;
+    height: fit-content;
+    border-radius: 0 0 1%;
+    padding-top: 6%;
+}
+
+  .toggle {
+position: fixed;
+cursor: pointer;
+left: 17px;
+height: 0;
+top: 20px;
+font-size: 2em;
+    /*! width: 0.01px; */
+  }
+
+.article-wrapper p {
+    line-height: 128%;
+    padding-bottom:3%;
+}
+
+.article-wrapper h3{
+    color:white;
+}
+
+#chatlogs h3{
+    text-align: center;
+    color: #ff7892;
+    font-size: 46px;
+}
+#chatlogs h4{
+margin-bottom: 0.7%;
+border-bottom: 1px solid;
+margin-top: 2%;
+}
+#chatlogs p{
+    margin-bottom: 14px;
+}
+a:hover{
+color:black;
+}
+
+.translatables h2{
+    margin-top: 4%;
+    text-decoration: underline;
+}
+header a, header a:hover{
+color:transparent;
+}
+@media (prefers-color-scheme: dark) {
+    .secret, .emojiHider, .important-article, .secret p, .tiny-hidden{
+        color:transparent;
+    }
+}/*medias*/
+
+@media (prefers-color-scheme: light) {
+        .secret, .emojiHider, .important-article, .secret p, .tiny-hidden{
+        color:transparent;
+    }
+}
+
+
+
+@media screen and (min-width: 1056px) and (max-width: 1488px) {
+    header > nav{
+        left:6%;
+    }
+    header a{
+        padding-left:30%;
+    }
+    main{
+        margin-top:8%;
+    }
+}
+
+@media screen and (min-width: 1124px) and (max-width: 1370px) {
+    header > nav{
+        left:1%;
+    }
+    aside{
+        padding-top:8%;
+    }
+    main{
+       margin-top:10%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1124px) {
+    header > nav{
+        left: 5%;
+    }
+    header a{
+        padding-left:12%;
+    }
+        .da-intro{
+        width:85%;
+    }
+    .da-intro h3{
+        text-align: center;
+    }
+    aside{
+        padding-top:9%;
+    }
+    main{
+        padding-top:1%;
+        margin-top:11%;
+    }
+    
+}
+
+@media screen and (min-width: 884px) and (max-width: 1000px) {
+  /* your css rules here */
+    header > nav{
+        left: 5%;
+    }
+    header a{
+        padding-left:5%;
+    }
+        .da-intro{
+        width:85%;
+    }
+    .da-intro h3{
+        text-align: center;
+    }
+     aside{
+        padding-top:10%;
+    }
+    main{
+        margin-top:12%;
+    }
+}
+    
+@media screen and (min-width: 786px) and (max-width: 884px) {
+    header > nav{
+        left: 4%;
+    }
+    header a{
+        padding-left:2%;
+    }
+    main{
+        margin-top:12%;
+    }
+         aside{
+        padding-top:11%;
+    }
+}
+
+
+@media screen and (min-width: 590px) and (max-width: 785px) {
+  /* your css rules here */
+    header > nav{
+        left: 4%;
+        flex-direction: column;
+    }
+    header a{
+        padding-left:2%;
+    }
+    header > div{
+        
+    padding-top: 2%;
+    }
+        .da-intro{
+        width:85%;
+    }
+    main{
+        margin-top:16%;
+    }
+      div#stories.translatables, section#chatlogs{
+          width:80%;
+          margin-left:10%;
+    }
+        aside{
+        width: 100vw;
+        padding-top: 11%;
+    }
+    aside p{
+        padding-right: 8%;
+        padding-left: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 605px) and (max-width: 745px) {
+  /* your css rules here */
+        header > nav{
+        left: 4%;
+        flex-direction: column;
+    }
+        main{
+        margin-top:22%;
+    }
+    header a{
+        padding-left:2%;
+    }
+    header > div{
+        
+    padding-top: 2%;
+    }
+    .da-intro{
+        width:65%;
+    }
+    .da-intro h3{
+        text-align: center;
+    }
+    footer{
+        justify-content: center;
+        height:5vh;
+        margin-top:3%;
+       
+    }
+    footer p{
+        margin-left: 6%;
+        text-align: center;
+    }
+          .center-epic{
+        font-size:19px;
+        bottom:3px;
+        position: absolute;
+       margin-left:46.5vw;
+    }
+
+    
+}
+
+@media screen and (min-width: 523px) and (max-width: 605px) {
+  /* your css rules here */
+      div#stories.translatables, section#chatlogs{
+          width:70%;
+          margin-left:15%;
+          
+    }
+    header nav{
+        display: none;
+    }
+    header{
+        position:absolute;
+    }
+    header div{
+        padding-left:4%;
+    }
+    #da-intro{
+        padding-top:11%;
+    }
+    footer{
+        justify-content: center;
+        height:5vh;
+        margin-top:3%;
+       
+    }
+    footer p{
+        margin-left: 6%;
+        text-align: center;
+       margin-top:2%;
+        font-size:0.6em;
+    }
+          .center-epic{
+        display: none;
+    }
+    .desktop-p{
+        display: none;
+    }
+    .mobile-p{
+        display: inherit;
+    }
+            aside{
+        width: 100vw;
+        padding-top: 17%;
+        display:none;
+    }
+    aside p{
+        padding-right: 8%;
+        padding-left: 5%;
+    }
+        main{
+        margin-top:23%;
+    }
+   
+}
+@media screen and (max-width: 521px){
+    .skinnypix{
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 419px) and (max-width: 522px) {
+  /* your css rules here */
+     div#stories.translatables, section#chatlogs{
+          width:75%;
+          margin-left:10%;
+    }
+
+    header{
+        display: none;
+    }
+    header div{
+        padding-left:4%;
+    }
+    #da-intro{
+        padding-top:2%;
+        width:70%;
+        margin-left:7%;
+    }
+    footer{
+        justify-content: center;
+        height:5vh;
+        margin-top:3%;
+       
+    }
+    footer p{
+        margin-left: 4%;
+        text-align: center;
+       margin-top:2%;
+        font-size:0.6em;
+    }
+          .center-epic{
+        display: none;
+    }
+    .desktop-p{
+        display: none;
+    }
+    .mobile-p{
+        display: inherit;
+    }
+    aside{
+        width:70vw;
+        padding-left:5%;
+        position: initial;
+        padding-top:3%;
+        margin-left:28%;
+        margin-right:5%;
+        display: block;
+        
+    }
+    aside p{
+        padding-right:10%;
+    }
+    .super-mobile-p{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 419px) {
+      div#stories.translatables, section#chatlogs{
+          width:70%;
+          margin-left:15%;
+
+    }
+
+    header{
+        display: none;
+    }
+    header div{
+        padding-left:4%;
+    }
+    #da-intro{
+        padding-top:2%;
+        width:135%;
+        margin-left:-25%;
+    }
+     #da-intro h3{
+         text-align: center;
+    }
+    footer{
+        justify-content: center;
+        height:5vh;
+        margin-top:3%;
+       
+    }
+    footer p{
+        margin-left: 4%;
+        text-align: center;
+       margin-top:2%;
+        font-size:0.6em;
+    }
+          .center-epic{
+        display: none;
+    }
+    .desktop-p{
+        display: none;
+    }
+    .mobile-p{
+        display: inherit;
+    }
+    .secret, .emojiHider{
+        display: none;
+    }
+        aside{
+        width:80vw;
+        padding-left:5%;
+        position: initial;
+        padding-top:3%;
+        margin-left:7.5%;
+        margin-right:5%;
+        padding-bottom:0;
+            display: block;
+        
+    }
+    aside p{
+        padding-right:5%;
+    }
+    .super-mobile-p{
+        display: none;
+    }
+}
+/*dont*/
+
+
+
+
+
+
+

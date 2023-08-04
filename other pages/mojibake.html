@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mojibake Encrypter allows you to encode and decode text using Mojibake (text garbling) technique.">
+    <title>Mojibake Encrypter</title>
+    <style>
+        body {
+            background-color: slategray;
+            font-family: Arial;
+            margin: 0;
+            padding: 20px;
+        }
+        button {
+            font-size: 12px;
+            width: 140px;
+            height: 35px;
+            background-color: plum;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mojibake Encrypter</h1>
+    <input type="text" id="inputText" placeholder="Enter text to encode/decode...">
+    <br><br>
+    <input type="radio" name="process" id="encode" value="encode" checked> Encode
+    <input type="radio" name="process" id="decode" value="decode"> Decode
+    <br><br>
+    <button id="processBtn">Process Text</button>
+    <br><br>
+    <textarea id="outputText" rows="8" readonly></textarea>
+    <br><br>
+    <button id="copyBtn">Copy to Clipboard</button>
+
+    <script>
+        function iso88591ToUtf8(str) {
+  return unescape(encodeURIComponent(str));
+}
+
+function utf8ToIso88591(str) {
+  return decodeURIComponent(escape(str));
+}
+
+document.getElementById('processBtn').onclick = function processText() {
+    const inputText = document.getElementById('inputText').value;
+    const encode = document.getElementById('encode').checked;
+
+    let outputText;
+    if (encode) {
+        outputText = iso88591ToUtf8(inputText);
+    } else {
+        outputText = utf8ToIso88591(inputText);
+    }
+
+    document.getElementById('outputText').value = outputText;
+}
+
+document.getElementById('copyBtn').onclick = function copyText() {
+    const outputText = document.getElementById('outputText');
+    outputText.select();
+    document.execCommand('copy');
+}
+
+        
+    </script>
+</body>
+</html>
